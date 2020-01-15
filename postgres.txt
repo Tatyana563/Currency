@@ -1,0 +1,25 @@
+CREATE TABLE user(
+                   user_id  PRIMARY KEY,
+                   password INTEGER NOT NULL,
+                   phone VARCHAR (64)  NOT NULL,
+                   email VARCHAR (64)  NOT NULL,
+                   country country_type,
+                   city city_type
+                                        );
+
+                   CREATE SEQUENCE user_sequence
+                           INCREMENT 1
+                           START 1;
+
+
+CREATE TYPE country_type AS ENUM (   'ITALY',
+                                      'SPAIN',
+                                      'GERMANY',
+                                      'FRANCE',
+                                      'POLAND');
+
+CREATE TYPE country_type AS ENUM (    ROME,
+                                      BARCELONA,
+                                      BERLIN,
+                                      WARWSAW,
+                                      PARIS);

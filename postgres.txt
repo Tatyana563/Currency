@@ -1,5 +1,6 @@
 CREATE TABLE user(
-                   user_id  PRIMARY KEY,
+                   user_id int PRIMARY KEY,
+                   username VARCHAR NOT NULL,
                    password INTEGER NOT NULL,
                    phone VARCHAR (64)  NOT NULL,
                    email VARCHAR (64)  NOT NULL,

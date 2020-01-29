@@ -1,4 +1,4 @@
-package model;
+package com.example.currency.model;
 
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -10,15 +10,16 @@ import javax.persistence.*;
 @Getter
 @Entity
 @NoArgsConstructor
-@Table(name = "model.User")
+@Table(name = "USERS")
 public class User {
 
+    @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "gen_user")
     @SequenceGenerator(name = "gen_user", sequenceName = "user_sequence", allocationSize = 1)
     @Column(name = "USER_ID")
     private Integer id;
 
-    @Column(name = "NAME", nullable = false)
+    @Column(name = "USERNAME", nullable = false)
     private String name;
 
     @Column(name = "PASSWORD", nullable = false)
@@ -30,12 +31,12 @@ public class User {
     @Column(name = "EMAIL")
     private String email;
 
-    @Enumerated(EnumType.STRING)
+   /* @Enumerated(EnumType.STRING)
     @Column(name = "COUNTRY")
     private Country country;
 
     @Enumerated(EnumType.STRING)
     @Column(name = "CITY")
-    private City city;
+    private City city;*/
 
 }

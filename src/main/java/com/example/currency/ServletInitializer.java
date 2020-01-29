@@ -1,13 +1,15 @@
-package com.example.currency2;
+package com.example.currency;
 
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.servlet.support.SpringBootServletInitializer;
 
+@SpringBootApplication
 public class ServletInitializer extends SpringBootServletInitializer {
 
 	@Override
 	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(Currency2Application.class);
+		return application.sources(CurrencyApplication.class);
 	}
 
 }

@@ -1,13 +1,15 @@
-package com.example.currency2;
+package com.example.currency;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
 @SpringBootTest
 class Currency2ApplicationTests {
 
 	@Test
 	void contextLoads() {
+		System.out.println(new BCryptPasswordEncoder().encode("123"));
 	}
 
 }

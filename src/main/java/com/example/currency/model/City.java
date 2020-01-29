@@ -1,4 +1,4 @@
-package model;
+package com.example.currency.model;
 
 public enum City {
     ROME,

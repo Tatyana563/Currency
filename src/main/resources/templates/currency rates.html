@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--<h1 th:utext="${logged.username}">Currency</h1>
+<h1 th:utext="${logged.authorities}">Currency</h1>-->
+<table>
+    <thead>
+    <tr class="headings">
+        <th th:each="header: ${headers}" class="column-title" th:text="${header}" />
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr class="even pointer" th:each="row: ${pair}" id="tablerow">
+        <td th:text="${row.toString()}" />
+    </tr>
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,4 +1,4 @@
-CREATE TABLE user(
+CREATE TABLE users(
                    user_id int PRIMARY KEY,
                    username VARCHAR NOT NULL,
                    password INTEGER NOT NULL,
@@ -19,8 +19,9 @@ CREATE TYPE country_type AS ENUM (   'ITALY',
                                       'FRANCE',
                                       'POLAND');
 
-CREATE TYPE country_type AS ENUM (    ROME,
-                                      BARCELONA,
-                                      BERLIN,
-                                      WARWSAW,
-                                      PARIS);
+
+CREATE TYPE city_type AS ENUM (    'ROME',
+                                      'BARCELONA',
+                                      'BERLIN',
+                                      'WARWSAW',
+                                      'PARIS');

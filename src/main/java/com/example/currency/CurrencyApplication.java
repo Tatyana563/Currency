@@ -1,13 +1,13 @@
-package com.example.currency2;
+package com.example.currency;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Currency2Application {
+public class CurrencyApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Currency2Application.class, args);
+		SpringApplication.run(CurrencyApplication.class, args);
 	}
 
 }
